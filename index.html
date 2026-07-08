@@ -472,13 +472,25 @@ body::before {
   min-height: 36px;
 }
 .card-foot { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
-.card-price {
-  font-family: var(--font-display);
-  font-size: 22px;
-  font-weight: 600;
-  color: var(--navy);
+.card-price{
+    display:flex;
+    align-items:baseline;
+    gap:6px;
+    margin-top:5px;
 }
-.card-price .currency { font-size: 14px; margin-right: 2px; opacity: 0.7; }
+
+.new-price{
+    font-size:18px;
+    font-weight:600;
+    color:var(--navy);
+}
+
+.old-price{
+    font-size:15px;
+    color:#999;
+    text-decoration:line-through;
+    font-weight:400;
+}
 .buy-btn {
   display: inline-flex;
   align-items: center;
