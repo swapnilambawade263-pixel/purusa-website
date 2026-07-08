@@ -1492,9 +1492,6 @@ function renderGrid(filter = 'all') {
 
     ${s.oldPrice ? `
         <span class="old-price">₹${formatPrice(s.oldPrice)}</span>
-        <span class="discount">
-            ${Math.round(((s.oldPrice - s.price) / s.oldPrice) * 100)}% OFF
-        </span>
     ` : ""}
 </span>
           <a href="${makeWhatsAppLink(s)}" target="_blank" rel="noopener" class="buy-btn" onclick="event.stopPropagation()">
